@@ -1,0 +1,82 @@
+<html><head>
+    <title>Warframe Challenge Generator</title>
+	<html>
+<head>
+<style>
+body {background-color:#262626;}
+</style>
+</head>
+    <script type="text/javascript">
+        var challengelist = [
+            "Explosive Weapons Only",
+            "Bad Warframes",
+            "Main Gun Primary",
+            "Main Gun Secondary",
+            "Main Melee",
+            "Laser Weapons Only",
+            "Projectile Weapons Only",
+            "Hitscan Weapons Only",
+            "No Duplicate 'Type' (ie Hitscan) Weapons",
+            "Main Abilities",
+            "Bad Warframes",
+            "Bad Warframes"
+        ];
+		
+		var flavorList = [
+			"Vor Rants About...",
+			"Lotus Desires...",
+			"The Suda Ponder...",
+			"&lt;Insert 'Witty' Ordis Pun Here>",
+			"The Corpus Wonder Why Someone Wasted Time Writing This Sentence Down...",
+			"Teshin does whatever he does...",
+			"Your Operator Monologues...",
+			"I'm running out of stuff to put here...",
+			"Lech Krill Laughs at the Thought of...",
+			"Lephantis Still Dies Too...",
+			"Nyx demands...",
+			"Corpus Prodman Lobbys For...",
+			"THEY CUT ME IN HALF!!!!",
+			"Grate Prime's Elegance Vibrates...",
+			"By Mesa's Blindfold!",
+			"Where's the Loki?",
+			"Del Tacos and Warframe, all thats missing is a type 8 shuttle pet...",
+			"Why can Nova cloak? Oh Wrong Game.",
+			"The Gods of the Dankest Memes Meme at you!",
+			"Mogamu: Well Rackta Cernos isn't good because it doesn't overkill for 100k like Dread (Im Parapharsing)",
+			"Oh a Catalyst Alert! Go get it... Made you Look.",
+			"The Stalker Hunts...",
+			"Lotus: The Odds were against you...",
+			"Wall Hopping > Wall Running"
+        ];
+
+        function RndText1() {
+            var rannum = Math.floor(Math.random() * challengelist.length);
+            document.getElementById('ShowResult1').innerHTML = challengelist[rannum];
+            document.getElementById('ShowResult1').style.fontSize = "64px";
+        }
+
+        function RndText2() {
+            var rannum = Math.floor(Math.random() * flavorList.length);
+            document.getElementById('ShowResult2').innerHTML = flavorList[rannum];
+            document.getElementById('ShowResult2').style.fontSize = "24px";
+        }
+        onload = function() {
+            RndText1();
+			RndText2();
+        }
+    </script>
+</head>
+
+<body style="text-align: center; font-family: Helvetica; color: #DBDBDB;">
+    <center>
+        <br>
+        <br>
+		<div id="ShowResult2" style="font-size: 12px;">Error</div>
+		<br>
+		<br>
+        <div id="ShowResult1" style="font-size: 64px;">Error</div>
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    </center>
+
+
+</body></html>
